@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: v2.0.3-2201906121747
 description: Deluge is a torrent download client
 name: deluge
-version: 0.1.0
+version: 0.1.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - deluge
