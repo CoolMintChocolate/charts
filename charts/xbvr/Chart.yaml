@@ -1,0 +1,23 @@
+---
+apiVersion: v2
+appVersion: v0.3.33
+description: The ultimate tool for managing your VR porn library
+name: xbvr
+version: 0.1.0
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - xbvr
+home: https://github.com/CoolMintChocolate/charts/tree/master/charts/xbvr
+icon: https://raw.githubusercontent.com/xbapps/xbvr/master/ui/public/icons/xbvr-512.png
+sources:
+  - https://github.com/xbapps/xbvr
+maintainers:
+  - name: CoolMintChocolate
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 1.3.1
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Init chart

@@ -1,0 +1,37 @@
+image:
+  # -- image repository
+  repository: ghcr.io/xbapps/xbvr
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: 0.3.33
+
+# -- environment variables. See more environment variables in the [deluge documentation](https://github.com/linuxserver/docker-deluge#parameters).
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: "Europe/London"
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 9999
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  config:
+    enabled: false
+    mountPath: /root/.config
+  videos:
+    enabled: false
+    mountPath: /videos
