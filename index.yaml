@@ -4,6 +4,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Align kubeversion with common chart
+    apiVersion: v2
+    appVersion: v2.0.3-2201906121747
+    created: "2023-02-05T01:28:46.63245936Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.3.1
+    description: Deluge is a torrent download client
+    digest: a4c51103732b30c33ca2e9d5d30ff33733b5709fdcf4cedcec7630d829fb2b27
+    home: https://github.com/CoolMintChocolate/charts/tree/master/charts/deluge
+    icon: https://avatars2.githubusercontent.com/u/6733935?v=3&s=200
+    keywords:
+    - deluge
+    - torrent
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: CoolMintChocolate
+    name: deluge
+    sources:
+    - https://hub.docker.com/r/linuxserver/deluge/
+    - https://deluge-torrent.org/
+    urls:
+    - https://github.com/CoolMintChocolate/charts/releases/download/deluge-0.1.2/deluge-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Init chart
     apiVersion: v2
     appVersion: v2.0.3-2201906121747
@@ -57,4 +85,31 @@ entries:
     urls:
     - https://github.com/CoolMintChocolate/charts/releases/download/deluge-0.1.0/deluge-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-05T01:04:40.67636524Z"
+  xbvr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Init chart
+    apiVersion: v2
+    appVersion: v0.3.33
+    created: "2023-02-05T01:28:46.827378874Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.3.1
+    description: The ultimate tool for managing your VR porn library
+    digest: df44d28eed20f5c81a7f134aa06d93110d2ff4730606682822c455f6389ce994
+    home: https://github.com/CoolMintChocolate/charts/tree/master/charts/xbvr
+    icon: https://raw.githubusercontent.com/xbapps/xbvr/master/ui/public/icons/xbvr-512.png
+    keywords:
+    - xbvr
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: CoolMintChocolate
+    name: xbvr
+    sources:
+    - https://github.com/xbapps/xbvr
+    urls:
+    - https://github.com/CoolMintChocolate/charts/releases/download/xbvr-0.1.0/xbvr-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-02-05T01:28:46.827392174Z"
