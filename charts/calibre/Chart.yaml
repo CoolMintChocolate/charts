@@ -1,0 +1,24 @@
+---
+apiVersion: v2
+appVersion: version-v5.21.0
+description: Calibre is a powerful and easy to use e-book manager.
+name: calibre
+version: 0.1.0
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - calibre
+home: https://github.com/CoolMintChocolate/charts/tree/master/charts/calibre
+icon: https://github.com/kovidgoyal/calibre/raw/master/resources/images/lt.png
+sources:
+  - https://hub.docker.com/r/linuxserver/calibre/
+  - https://github.com/kovidgoyal/calibre/
+maintainers:
+  - name: CoolMintChocolate
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts/
+    version: 1.3.1
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Init chart
