@@ -27,6 +27,39 @@ entries:
     urls:
     - https://github.com/CoolMintChocolate/charts/releases/download/airsonic-0.1.0/airsonic-0.1.0.tgz
     version: 0.1.0
+  bazarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Init chart
+    apiVersion: v2
+    appVersion: v1.0.3
+    created: "2023-02-05T01:57:20.268843632Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.3.1
+    description: Bazarr is a companion application to Sonarr and Radarr. It manages
+      and downloads subtitles based on your requirements
+    digest: 19ba4465efe0cb75baf88c80d85194c16be6ef0be7aaf8e88e888e65f8eadbe8
+    home: https://github.com/CoolMintChocolate/charts/tree/master/charts/bazarr
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bazarr.png
+    keywords:
+    - bazarr
+    - radarr
+    - sonarr
+    - subtitles
+    - usenet
+    - torrent
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: CoolMintChocolate
+    name: bazarr
+    sources:
+    - https://github.com/morpheus65535/bazarr
+    urls:
+    - https://github.com/CoolMintChocolate/charts/releases/download/bazarr-0.1.0/bazarr-0.1.0.tgz
+    version: 0.1.0
   calibre:
   - annotations:
       artifacthub.io/changes: |-
@@ -167,4 +200,4 @@ entries:
     urls:
     - https://github.com/CoolMintChocolate/charts/releases/download/xbvr-0.1.0/xbvr-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-05T01:53:47.410908554Z"
+generated: "2023-02-05T01:57:20.268853432Z"
