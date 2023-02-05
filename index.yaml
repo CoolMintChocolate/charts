@@ -1,5 +1,32 @@
 apiVersion: v1
 entries:
+  airsonic:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Init chart
+    apiVersion: v2
+    appVersion: 10.6.2
+    created: "2023-02-05T01:49:59.486602933Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts/
+      version: 1.3.1
+    description: Airsonic is a Free and Open Source community driven media server
+    digest: d1d9badcaf21f5eec76e2cbfdf14a2bb61f2fb83c4969ec9c23845dd1813aedc
+    home: https://github.com/CoolMintChocolate/charts/tree/master/charts/airsonic
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-logo.png
+    keywords:
+    - airsonic
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - name: CoolMintChocolate
+    name: airsonic
+    sources:
+    - https://github.com/airsonic-advanced/airsonic-advanced
+    urls:
+    - https://github.com/CoolMintChocolate/charts/releases/download/airsonic-0.1.0/airsonic-0.1.0.tgz
+    version: 0.1.0
   deluge:
   - annotations:
       artifacthub.io/changes: |-
@@ -112,4 +139,4 @@ entries:
     urls:
     - https://github.com/CoolMintChocolate/charts/releases/download/xbvr-0.1.0/xbvr-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-05T01:28:46.827392174Z"
+generated: "2023-02-05T01:49:59.486612833Z"
